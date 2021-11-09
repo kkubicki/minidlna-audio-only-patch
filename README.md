@@ -13,4 +13,4 @@ This patch was generated and tested with minidlna version 1.3.0.
 6. Copy package into `/tmp` folder on your router, update opkg and install new package: `opkg install /tmp/minidlna-audio-only_1.3.0-1_mipsel_24kc.ipk`.
 
 # Further space reduction
-It is possible to reduce space requirements even more by cutting off libvorbis dependency as it needs over 700kB.
+It is possible to reduce space requirements even more by cutting off libvorbis/libogg dependencies as they need over 700kB. Use `002-Audio-only-patch-no-vorbis.patch` in this case and remember to remove from Makefile `+libvorbis` dependency.
