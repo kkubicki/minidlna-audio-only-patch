@@ -1,5 +1,5 @@
 # MiniDLNA audio-only patch
-This is a patch for minidlna for disabling video and leaving only audio functionality and thus substantially reducing installed package space requirements. 
+This is a patch for minidlna for disabling video tagging functionality and thus substantially reducing installed package space requirements. 
 It was made with low flash memory (8MB) OpenWRT routers in mind. With libffmpeg dependencies cut off, it requires only ~1.3MB of memory (instead of ~3.5MB for full audio/video version).
 
 This patch was generated and tested with minidlna version 1.3.0.
